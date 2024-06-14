@@ -1,74 +1,69 @@
-# Philippine Phone Prefix Checker
+# ph-phone-prefix-checker
 
-This Nuxt.js application helps you quickly identify the network (Globe, TM, Smart, or DITO) associated with a Philippine mobile phone number prefix.
+## Build Setup
 
-## Features
+```bash
+# install dependencies
+$ npm install
 
-- **Simple Input:** Enter the first 4 digits of a phone number to check its network.
-- **Instant Results:** Get the network name instantly if it's found in our database.
-- **Error Handling:**  Provides feedback if the prefix is invalid or not found.
-- **Offline Ready:** Works offline thanks to the locally stored prefix data.
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-## How to Use
+# build for production and launch server
+$ npm run build
+$ npm run start
 
-1. **Clone the Repository:**
-   ```bash
-   git clone
-   ```
-
-2. **Install Dependencies:**
-   ```bash
-   cd philippine-prefix-checker
-   npm install 
-   ```
-
-3. **Start the Development Server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in Browser:** Navigate to `http://localhost:3000` (or the port specified in your console).
-
-5. **Enter Prefix:** Type the first 4 digits of the phone number in the input field and click "Check Network".
-
-## How it Works
-
-- The app loads a JSON file (`prefix-data.json`) containing Philippine phone prefixes and their corresponding networks.
-- When you enter a prefix, the app searches through this data to find a match.
-- If found, the network name is displayed; otherwise, an error message is shown.
-
-## Data Source
-
-The prefix data is sourced from a comprehensive list of Philippine mobile networks and their prefixes. While we strive to keep the data accurate, mobile carriers may change their prefix assignments over time.
-
-## Contributing
-
-Contributions are welcome! If you notice any incorrect or outdated information, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE.md` file for details.
-
-
-## Project setup
-```
-npm install
+# generate static project
+$ npm run generate
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run dev
-```
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Special Directories
 
-### Lints and fixes files
-```
-npm run lint
-```
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-### Customize configuration
-See Configuration Reference [invalid URL removed].
+### `assets`
+
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+
+### `components`
+
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+
+### `layouts`
+
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+
+
+### `pages`
+
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+
+### `plugins`
+
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+
+### `static`
+
+This directory contains your static files. Each file inside this directory is mapped to `/`.
+
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+
+### `store`
+
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
